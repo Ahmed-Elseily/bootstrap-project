@@ -1,0 +1,915 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{nav-section}}}}}}}}}}}}}}}}}}} --> */
+
+.navbar {
+    /* --bs-bg-opacity: 0; */
+    background-color: transparent;
+}
+
+nav a {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+}
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: white;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: white;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.nav-item a {
+    position: relative;
+}
+
+.nav-item a::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 10%;
+    width: 0%;
+    transition: all 0.3s;
+}
+
+.nav-item .active::after {
+    width: 100%;
+}
+
+
+
+/* <!-- {{{{{{{{{{{{{{{{{{{header-section}}}}}}}}}}}}}}}}}}} --> */
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header h1 span::after {
+    content: "|";
+    font-weight: 400;
+    animation-name: typing;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "|";
+    }
+
+    2% {
+        content: "L|";
+    }
+
+    3% {
+        content: "La|";
+    }
+
+    4% {
+        content: "Lar|";
+    }
+
+    5% {
+        content: "Larr|";
+    }
+
+    6% {
+        content: "Larry|";
+    }
+
+    7% {
+        content: "Larry D|";
+    }
+
+    8% {
+        content: "Larry Da|";
+    }
+
+    9% {
+        content: "Larry Dan|";
+    }
+
+    10% {
+        content: "Larry Dani|";
+    }
+
+    11% {
+        content: "Larry Danie|";
+    }
+
+    12% {
+        content: "Larry Daniel|";
+    }
+
+    13% {
+        content: "Larry Daniels|";
+    }
+
+    14% {
+        content: "Larry Daniel|";
+    }
+
+    15% {
+        content: "Larry Danie|";
+    }
+
+    16% {
+        content: "Larry Dani|";
+    }
+
+    17% {
+        content: "Larry Dan|";
+    }
+
+    18% {
+        content: "Larry Da|";
+    }
+
+    19% {
+        content: "Larry D";
+    }
+
+    20% {
+        content: "Larry |";
+    }
+
+    21% {
+        content: "Larr|";
+    }
+
+    22% {
+        content: "Lar|";
+    }
+
+    23% {
+        content: "La|";
+    }
+
+    24% {
+        content: "L|";
+    }
+
+    25% {
+        content: "|";
+    }
+
+    26% {
+        content: "D|";
+    }
+
+    27% {
+        content: "De|";
+    }
+
+    28% {
+        content: "Dev|";
+    }
+
+    29% {
+        content: "Deve|";
+    }
+
+    30% {
+        content: "Devel|";
+    }
+
+    31% {
+        content: "Develo|";
+    }
+
+    32% {
+        content: "Develop|";
+    }
+
+    33% {
+        content: "Develope|";
+    }
+
+    34% {
+        content: "Developer|";
+    }
+
+    35% {
+        content: "Develop|";
+    }
+
+    36% {
+        content: "Develo|";
+    }
+
+    37% {
+        content: "Devel|";
+    }
+
+    38% {
+        content: "Deve|";
+    }
+
+    39% {
+        content: "Deve|";
+    }
+
+    40% {
+        content: "Dev|";
+    }
+
+    41% {
+        content: "De|";
+    }
+
+    42% {
+        content: "D|";
+    }
+
+    43% {
+        content: "|";
+    }
+
+    44% {
+        content: "D|";
+    }
+
+    45% {
+        content: "De|";
+    }
+
+    46% {
+        content: "Des|";
+    }
+
+    47% {
+        content: "Desi|";
+    }
+
+    48% {
+        content: "Desin|";
+    }
+
+    49% {
+        content: "Desing|";
+    }
+
+    50% {
+        content: "Desinge|";
+    }
+
+    51% {
+        content: "Desinger|";
+    }
+
+    52% {
+        content: "Desinge|";
+    }
+
+    53% {
+        content: "Desing|";
+    }
+
+    54% {
+        content: "Desin|";
+    }
+
+    55% {
+        content: "Desi|";
+    }
+
+    56% {
+        content: "Des|";
+    }
+
+    57% {
+        content: "De|";
+    }
+
+    58% {
+        content: "D|";
+    }
+
+    59% {
+        content: "|";
+    }
+
+    70% {
+        content: "|";
+    }
+
+    90% {
+        content: "|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+.header .header-icons .h-icons {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{about-section}}}}}}}}}}}}}}}}}}} --> */
+
+.about-section .col-lg-5 img {
+    width: 75%;
+    margin-left: 40px;
+
+}
+
+.about-section .col-lg-5 .imgs-dots {
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    z-index: -1;
+}
+
+.col-lg-7 h3 {
+    font-weight: 800;
+    font-size: 30xp;
+}
+
+.col-lg-7 span {
+    color: #999999;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.col-lg-7 p {
+    color: #748182;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    width: 85%;
+}
+
+.col-lg-7 .span-bold {
+    color: #748182;
+    font-weight: 700;
+    letter-spacing: 0px;
+
+}
+
+.col-lg-7 .progress {
+    height: 25px;
+    box-shadow: 0px 0px 2px black inset;
+}
+
+.col-lg-7 .about-btns .btn-1 {
+    font-size: 14px;
+    padding: 8px 25px;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.col-lg-7 .about-btns .btn-1:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+
+}
+
+.col-lg-7 .about-btns .btn-2 {
+    font-size: 14px;
+    padding: 8px 25px;
+    background-color: white;
+    border-color: black;
+    color: black;
+    transition: all 0.5s;
+}
+
+.col-lg-7 .about-btns .btn-2:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{services-section}}}}}}}}}}}}}}}}}}} --> */
+.services-section {
+    background-color: whitesmoke;
+}
+
+.services-section .header-text h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.services-section h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+.services-section .services-box {
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    ;
+}
+
+.services-section .services-icon {
+    width: 80px;
+    height: 80px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.services-section .services-box h6 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.services-section .services-box p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #748182;
+    padding-bottom: 0;
+    line-height: 24px;
+}
+
+.services-section .services-box:hover .services-icon {
+    background-color: black;
+    color: white;
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{portfolio-section}}}}}}}}}}}}}}}}}}} --> */
+
+.port-section .header-text h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.port-section h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+.port-section .port-layer {
+    background-color: white;
+    left: 5;
+    bottom: 5;
+    right: 5;
+    top: 5;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(4%);
+    transition: all 0.4s;
+}
+
+.port-section .port-layer h6 {
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    transform: translateY(-100%);
+    /* margin-bottom: 30px; */
+    transition: all 0.5s;
+}
+
+.port-section .port-icons .port-icons-layer a {
+    color: white;
+}
+
+.port-section .port-icons .port-icons-layer {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30%);
+    transition: all 0.4s;
+
+}
+
+.port-section .port-box:hover .port-layer {
+
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.port-section .port-box:hover #h6-move {
+    /* margin-bottom: 0px; */
+    transform: translateY(0%);
+
+}
+
+.port-section .port-box:hover .port-icons-layer {
+    transform: translateY(0%);
+}
+
+.port-section .port-icons .port-icons-layer:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.port-section .port-icons .port-icons-layer:hover a {
+    color: black;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-pills .nav-link-tabs {
+    position: relative;
+}
+
+.nav-pills .nav-link-tabs::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.nav-pills .active::after {
+    width: 100%;
+}
+
+.nav-link-tabs:focus,
+.nav-link-tabs:hover {
+    color: black;
+}
+
+.nav-link-tabs {
+    margin-inline: 15px;
+    padding-inline: 0;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{feedback-section}}}}}}}}}}}}}}}}}}} --> */
+.feed-back {
+    background-color: whitesmoke;
+}
+
+.feed-back .header-text h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.feed-back h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    margin-inline: 8px;
+    background-color: #748182;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-item p {
+    color: #748182;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.carousel-item h6 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.carousel-item span {
+    color: #888888;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{clients-section}}}}}}}}}}}}}}}}}}} --> */
+.clients-section h3 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.clients-section p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #748182;
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{team-section}}}}}}}}}}}}}}}}}}} --> */
+.team-section {
+    background-color: whitesmoke;
+}
+
+.team-section .header-text h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.team-section h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+.team-box .team-bot {
+    background-color: #5B5B5B;
+}
+
+.team-box .team-bot h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.team-box .team-bot h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.team-box .team-top .team-layer {
+    background-color: white;
+    left: 5;
+    bottom: 5;
+    right: 5;
+    top: 5;
+    position: absolute;
+    opacity: 0;
+    scale: 0.4;
+    transition: all 0.5s;
+}
+
+.team-box .team-top .team-layer a {
+    color: white;
+}
+
+.team-box .team-top .team-layer .team-icons .team-icon:hover a {
+    color: black;
+}
+
+.team-box .team-top .team-layer .team-icons .team-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+
+.team-box .team-top .team-layer .team-icons .team-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+.team-box .team-top img {
+    transition: all 0.6s;
+}
+
+.team-section .team-box .team-top:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.team-section .team-box:hover .team-layer {
+    transform: rotateY(360deg);
+    scale: 1;
+    opacity: 0.95;
+}
+
+/* <!-- {{{{{{{{{{{{{{{{{{{contact-section}}}}}}}}}}}}}}}}}}} --> */
+.contact-section .header-text h3 {
+    font-size: 40px;
+    font-weight: 900;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.contact-section h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+.contact-box .contact-icon {
+    width: 70px;
+    height: 70px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.contact-section .contact-box:hover .contact-icon {
+    background-color: black;
+    color: white;
+}
+.contact-box h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+.contact-box p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #748182;
+}
+.form-btn .btn-1 {
+    font-size: 14px;
+    padding: 8px 35px;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+.form-btn .btn-1:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.form-control-me {
+    display: block;
+    width: 100%;
+    padding: 0.6rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    border-color: transparent;
+    border: var(--bs-border-width) ;
+    border-radius: var(--bs-border-radius);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+/* <!-- {{{{{{{{{{{{{{{{{{{footer-section}}}}}}}}}}}}}}}}}}} --> */
+.footer-section{
+    background-color: #1C1C1C;
+    height: 10dvh;
+}
+.footer-section p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #748182;
+}
+/* <!-- {{{{{{{{{{{{{{{{{{{END}}}}}}}}}}}}}}}}}}} --> */
+
+@media screen 
+ and (max-width: 991px) 
+ and (min-width: 0px) 
+{ 
+    .navbar-collapse{
+        background-color: white;
+    
+    }
+    .navbar-collapse a{
+        color: black;
+    
+    }
+    .navbar-collapse a:hover{
+        color: black;
+    
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: black;
+    }
+
+}
